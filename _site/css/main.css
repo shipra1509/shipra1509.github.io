@@ -1,0 +1,361 @@
+header {
+  height: 7vh;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.1); }
+  header .background {
+    visibility: hidden;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    transform: scale(0);
+    transition: all 0.3s ease-out;
+    padding-top: 2vh;
+    text-decoration: none;
+    margin-top: 0;
+    text-align: center; }
+  header .header:hover .background {
+    visibility: visible;
+    display: block;
+    transform: scale(1);
+    top: 0px; }
+  header .header:hover i {
+    opacity: 0; }
+  header a i {
+    text-decoration: none; }
+  header i {
+    text-decoration: none;
+    margin-left: 50%;
+    color: black;
+    padding-top: 2vh; }
+  header .scrollto:hover {
+    text-decoration: none; }
+  header .scrollto {
+    text-decoration: none;
+    color: black;
+    font-family: 'Poiret One', cursive;
+    padding-right: 2em;
+    transition: all 0.3s ease-in;
+    font-weight: bold; }
+  header a span {
+    text-decoration: none; }
+
+body #home {
+  background-color: #ECDFBD;
+  height: 100vh; }
+  body #home .aboveLine {
+    color: #FB6648;
+    padding-top: 20vh;
+    padding-left: 30vh;
+    font-family: 'Poiret One', cursive;
+    margin-bottom: 0;
+    font-size: 4em; }
+  body #home .belowLine {
+    color: #FB6648;
+    padding-left: 90vh;
+    font-family: 'Poiret One', cursive;
+    font-size: 4em; }
+  body #home .row div {
+    background-color: #FB6648;
+    color: #ECDFBD;
+    text-decoration: none;
+    display: inline-block;
+    padding: 30px 35px;
+    font-size: 20px;
+    margin: 15px 5px;
+    width: 6em;
+    transition: all 0.3s ease-in; }
+  body #home .phrase li {
+    transition: scale(0);
+    transition: all 0.5s ease-in-out;
+    padding: 0 1em 0 0.8em;
+    color: #FB6648;
+    text-decoration: none;
+    font-family: 'Poiret One', cursive;
+    display: inline-block;
+    font-size: 2em;
+    font-weight: bold; }
+  body #home .row {
+    padding-top: 10vh;
+    padding-left: 40vh; }
+  body #home ul {
+    text-align: center; }
+  body #home .row div:hover {
+    background-color: #ECDFBD;
+    color: #FB6648; }
+body #about {
+  background-color: #F0F1EE;
+  width: 100%;
+  height: 100vh; }
+  body #about h1 {
+    padding-top: 5vh;
+    padding-left: 45vh;
+    font-family: left;
+    font-weight: bold;
+    color: black;
+    font-family: 'Poiret One', cursive; }
+  body #about p {
+    font-family: 'Poiret One', cursive;
+    /* font-family: 'Stalemate', cursive; */
+    text-align: center;
+    padding-top: 5vh;
+    font-size: 2em;
+    color: white; }
+  body #about img {
+    height: 80vh;
+    width: 50%;
+    float: right;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    transition: all 0.3s ease-in; }
+  body #about i {
+    padding-left: 50vh;
+    text-decoration: none;
+    color: black;
+    transition-property: transform, -webkit-transform;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+    transition: all 0.3s ease-in; }
+  body #about h2 {
+    color: black;
+    font-family: 'Poiret One', cursive;
+    text-align: center;
+    font-weight: bold;
+    visibility: hidden; }
+  body #about .scroll {
+    margin-top: 10vh;
+    margin-left: 25vh;
+    width: 40vh;
+    padding-left: 15vh; }
+  body #about .scroll h3 {
+    transition: all 0.3s ease-in; }
+  body #about a {
+    text-decoration: none; }
+  body #about h3 {
+    text-decoration: none;
+    color: white;
+    border: solid;
+    border-color: white;
+    text-align: center;
+    font-family: 'Poiret One', cursive; }
+  body #about h3:hover {
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.2); }
+  body #about .inside_about {
+    float: left;
+    margin-top: 5vh;
+    height: 65vh;
+    background-color: #3C4344; }
+body #skills {
+  background-color: #ECDFBD;
+  width: 100%;
+  height: 100vh; }
+  body #skills h1 {
+    padding-top: 10vh;
+    font-family: 'Poiret One', cursive;
+    text-align: center;
+    font-weight: bold; }
+  body #skills img {
+    padding-top: 5vh;
+    margin-left: 80px;
+    height: 17vh; }
+  body #skills h3 {
+    font-family: 'Poiret One', cursive;
+    text-align: center; }
+  body #skills .icons {
+    background-color: white;
+    margin-right: 20px;
+    width: 25%;
+    margin-top: 20px;
+    height: 25%; }
+  body #skills .insideSkills {
+    margin-left: 30vh; }
+  body #skills .progress-bar {
+    background-color: #FB6648; }
+body #projects {
+  background-color: #E0AF00;
+  height: 100vh;
+  width: 100%; }
+  body #projects img {
+    padding-top: 0;
+    height: 30vh;
+    width: 40vh;
+    margin-left: 5vh; }
+  body #projects .inside-projects {
+    height: 7vh;
+    width: 70vh;
+    margin-left: 33%;
+    margin-top: 10vh;
+    background-color: rgba(1, 0, 0, 0.1); }
+  body #projects .top {
+    color: white;
+    font-family: 'Poiret One', cursive;
+    font-size: 2em;
+    text-align: center;
+    padding-bottom: 10vh; }
+  body #projects .bottom {
+    color: white;
+    font-family: 'Poiret One', cursive;
+    font-size: 1.2em;
+    text-align: justify;
+    font-weight: bold; }
+  body #projects h3 {
+    font-family: 'Poiret One', cursive;
+    padding-top: 0;
+    font-weight: bold; }
+  body #projects hr {
+    color: black;
+    margin-left: 50vh; }
+  body #projects .demo {
+    margin-left: 0vh; }
+  body #projects .github {
+    margin-left: 5vh; }
+  body #projects a {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Poiret One', cursive;
+    border: 1px solid #6d6256;
+    background-color: rgba(0, 0, 0, 0.4);
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 2vh;
+    height: 5vh;
+    width: 20vh;
+    padding-left: 1em;
+    padding-right: 1em; }
+  body #projects a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-color: white;
+    text-decoration: none; }
+  body #projects button:hover {
+    opacity: 0.7; }
+  body #projects .description {
+    border-left: solid; }
+  body #projects section {
+    padding-top: 10vh; }
+body #contact {
+  background-color: #515151;
+  height: 100vh;
+  width: 100%; }
+  body #contact .sep {
+    width: 50vh;
+    margin-top: 10vh; }
+  body #contact h2 {
+    font-family: 'Poiret One', cursive;
+    color: white;
+    margin-left: 80vh;
+    margin-top: 7vh; }
+  body #contact .name {
+    margin-top: 7vh;
+    margin-left: 55vh;
+    padding-left: 2vh;
+    width: 40vh;
+    height: 7vh;
+    color: white;
+    font-family: 'Poiret One', cursive;
+    border: 1px solid #6d6256; }
+  body #contact .email {
+    margin-left: 3vh;
+    margin-top: 7vh;
+    padding-left: 2vh;
+    width: 40vh;
+    height: 7vh;
+    color: white;
+    font-family: 'Poiret One', cursive;
+    border: 1px solid #6d6256; }
+  body #contact .comments {
+    margin-left: 55vh;
+    margin-top: 3vh;
+    padding-left: 2vh;
+    width: 84vh;
+    height: 30vh;
+    color: white;
+    font-family: 'Poiret One', cursive;
+    border: 1px solid #6d6256; }
+  body #contact #contact_i ::-webkit-input-placeholder {
+    font-family: 'Poiret One', cursive;
+    color: white;
+    font-size: 1.2em; }
+  body #contact #contact_i :-moz-placeholder {
+    /* Firefox 18- */
+    font-family: 'Poiret One', cursive;
+    color: white;
+    font-size: 1.2em; }
+  body #contact #contact_i ::-moz-placeholder {
+    /* Firefox 19+ */
+    font-family: 'Poiret One', cursive;
+    color: white;
+    font-size: 1.2em; }
+  body #contact #contact_i :-ms-input-placeholder {
+    font-family: 'Poiret One', cursive;
+    color: white;
+    font-size: 1.2em; }
+  body #contact input {
+    background-color: rgba(0, 0, 0, 0.4); }
+  body #contact textarea {
+    background-color: rgba(0, 0, 0, 0.4); }
+  body #contact button {
+    color: #fff;
+    font-family: 'Poiret One', cursive;
+    border: 1px solid #6d6256;
+    background-color: rgba(0, 0, 0, 0.4);
+    font-size: 1.5em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-left: 85vh;
+    margin-top: 5vh;
+    height: 5vh;
+    width: 25vh; }
+  body #contact button:hover {
+    border-color: white;
+    opacity: 0.7; }
+
+footer {
+  background-color: rgba(255, 51, 51, 0.8);
+  height: 45vh;
+  width: 100%; }
+  footer a {
+    text-decoration: none; }
+  footer h3 {
+    color: white;
+    text-align: center;
+    font-family: 'Poiret One', cursive;
+    font-weight: bold; }
+  footer i {
+    color: white;
+    text-align: center; }
+  footer p {
+    text-decoration: none;
+    color: white;
+    font-family: 'Poiret One', cursive;
+    text-align: center;
+    font-weight: bold; }
+  footer .contact-section {
+    margin-top: 10vh; }
+  footer p a {
+    color: white;
+    transition: all 0.3s ease-in; }
+  footer p a:hover {
+    text-decoration: none;
+    color: white; }
+  footer .copyright {
+    text-align: center;
+    color: white;
+    margin-top: 3vh; }
+  footer .fa {
+    padding-right: 1em; }
+  footer .fa-github:hover {
+    color: black; }
+  footer .fa-linkedin:hover {
+    color: #0077B5; }
+  footer .fa-facebook:hover {
+    color: #3B5998; }
+  footer .fa-twitter:hover {
+    color: #2BA8DE; }
+  footer .fa-google-plus:hover {
+    color: #DD4B39; }
