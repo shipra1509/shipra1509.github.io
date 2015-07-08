@@ -1,5 +1,5 @@
-$(document).ready(function() {
-
+$(document).ready(function(){
+/*
  $('a[href^="#"]').on('click', function(event) {
     var target = $(this.href);
     if( target.length ) {
@@ -7,7 +7,6 @@ $(document).ready(function() {
         $('html, body').animate({
             scrollTop: target.offset().top
         }, 1000);
-    }
-});
-
+    }*/
 new WOW().init();
+});
