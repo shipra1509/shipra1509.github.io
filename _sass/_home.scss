@@ -1,7 +1,6 @@
-
 header{
-	height: 7vh;
-	width:100%;
+	min-height: 2.5em;
+	width: 100%;
 	position: fixed;
 	z-index: 100;
 	background-color: rgba(0,0,0,0.1);
@@ -31,7 +30,7 @@ header{
 		opacity: 0;
 	}
 
-	a i{
+	a, a:hover{
 		text-decoration: none;
 	}
 	
@@ -64,22 +63,22 @@ body {
 
 	#home{
 		background-color : #ECDFBD;
-		height : 100vh;
+		min-height : 100vh;
 
 		.aboveLine{
 			color : #FB6648;
-			padding-top : 20vh;
-			padding-left : 30vh;
+			padding-top : 15vh;
+			padding-left : 10vw;
 			font-family: 'Poiret One', cursive;
 			margin-bottom : 0;
-			font-size : 4em;
+			font-size : 10vh;
 		}
 
 		.belowLine{
 			color : #FB6648;
-			padding-left : 90vh;
+			padding-left : 50vw;
 			font-family: 'Poiret One', cursive;
-			font-size : 4em;
+			font-size : 10vh;
 		}
 
 		.row div{
@@ -87,28 +86,33 @@ body {
 			color: #ECDFBD;
 			text-decoration: none;
 			display: inline-block;
-			padding: 30px 35px;
-			font-size: 20px;
-			margin: 15px 5px;
-			width: 6em;
+			padding: 5vh;
+			margin-left: 2vw;
+			width: 10vw;
+			text-align: center;
 			transition: all 0.3s ease-in;
 		}
 
 		.phrase li{
 			transition: scale(0);
 			transition: all 0.5s ease-in-out;
-			padding: 0 1em 0 0.8em;
 			color: #FB6648;
 			text-decoration: none;
 			font-family: 'Poiret One', cursive;
 			display: inline-block;
-			font-size: 2em;
+			font-size:4vh;
 			font-weight: bold;
+			padding-left: 3vw;
+			padding-right: 3vw;
 		}
 
 		.row{
-			padding-top: 10vh;
-			padding-left: 40vh;
+			padding-top: 15vh; 
+			padding-left: 15vw;
+		}
+
+		.blocks{
+			text-align: center;
 		}
 
 		ul{
@@ -120,17 +124,22 @@ body {
 			color: #FB6648;
 		}
 
+		i{
+			font-size: 7vh;
+		}
+
 	}
 
 	#about{
 		background-color: #F0F1EE;
 		width: 100%;
-		height: 100vh;
+		min-height: 100vh;
 		h1{
 			padding-top: 5vh;
 			padding-left: 45vh;
 			font-family: left;
 			font-weight: bold;
+			font-size: 5vh;
 			color: black;
 			font-family: 'Poiret One', cursive;
 		}
@@ -140,18 +149,15 @@ body {
 			/* font-family: 'Stalemate', cursive; */
 			text-align: center;
 			padding-top: 5vh;
-			font-size: 2em;
+			font-size: 5vh;
 			color: white;
 		}
 
 		img{
-			height: 80vh;
-			width: 50%;
 			float:right;
-			margin-right:0;
-			margin-bottom: 0;
-			padding-bottom: 0;
 			transition: all 0.3s ease-in;
+			height: 84vh;
+			width: 20vw;
 		}
 
 		i{
@@ -174,29 +180,27 @@ body {
 
 		.scroll{
 			margin-top: 10vh;
-			margin-left: 25vh;
+			margin-left: 12vw;
 			width: 40vh;
 			padding-left: 15vh;
+			text-align: center;
 		}
 
-		.scroll h3{
+		.scroll a{
 			transition: all 0.3s ease-in;
 		}
 
 		a{
 			text-decoration: none;
-		}
-
-		h3{
-			text-decoration: none;
 			color: white;
-			border: solid;
-			border-color: white;
 			text-align: center;
+			border: solid white;
 			font-family: 'Poiret One', cursive;
+			padding:2vh;
+			font-size: 3vh;
 		}
 
-		h3:hover{
+		a:hover{
 			text-decoration: none;
 			background-color: rgba(0,0,0,0.2);
 		}
@@ -204,6 +208,7 @@ body {
 		.inside_about{
 			float:left;
 			margin-top: 5vh;
+			width: 55vw;
 			height: 65vh;
 			background-color: #3C4344;
 		}
@@ -212,7 +217,7 @@ body {
 	#skills{
 		background-color: #ECDFBD;
 		width: 100%;
-		height: 100vh;
+		min-height: 120vh;
 		h1{
 			padding-top: 10vh;
 			font-family: 'Poiret One', cursive;
@@ -222,25 +227,26 @@ body {
 
 		img{
 			padding-top: 5vh;
-			margin-left: 80px;
 			height:17vh;
 		}
 
 		h3{
 			font-family: 'Poiret One', cursive;
 			text-align: center;
+			font-size: 4vh;
 		}
 
 		.icons{
 			background-color: white;
-			margin-right: 20px;
-			width: 25%;
-			margin-top: 20px;
-			height: 25%;
+			margin-right: 4vw;
+			width: 20vw;
+			margin-top: 5vh;
+			height: 35vh;
+			text-align: center;
 		}
 
 		.insideSkills{
-			margin-left: 30vh;
+			margin-left: 10vw;
 		}
 
 		.progress-bar{
@@ -251,7 +257,7 @@ body {
 
 	#projects{
 		background-color: #E0AF00;
-		height: 100vh;
+		min-height: 120vh;
 		width:100%;
 
 		img{
@@ -264,23 +270,23 @@ body {
 		.inside-projects{
 			height: 7vh;
 			width: 70vh;
-			margin-left: 33%;
 			margin-top: 10vh;
+			margin-left: 27vw;
+			text-align: center;
 			background-color: rgba(1,0,0,0.1);
 		}
 
 		.top{
 			color: white;
 			font-family: 'Poiret One', cursive;
-			font-size: 2em;
+			font-size: 4vh;
 			text-align: center;
-			padding-bottom: 10vh;
 		}
 
 		.bottom{
 			color: white;
 			font-family: 'Poiret One', cursive;
-			font-size: 1.2em;
+			font-size: 3vh;
 			text-align: justify;
 			font-weight: bold;
 		}
@@ -340,27 +346,32 @@ a:hover{
 
 	#contact{
 		background-color: #515151;
-		height: 100vh;
+		min-height: 120vh;
 		width:100%;
 
 		.sep{
-			width: 50vh;
+			width: 25vw;
 			margin-top: 10vh;
 		}
 
 		h2{
 			font-family: 'Poiret One', cursive;
 			color: white;
-			margin-left: 80vh;
+			margin-left: 37vw;
 			margin-top: 7vh;
+			font-size: 5vh;
+		}
+
+		hr{
+			text-align: center;
 		}
 
 		
 		.name{
 			margin-top: 7vh;
-			margin-left: 55vh;
-			padding-left: 2vh;
-			width: 40vh;
+			margin-left: 23vw;
+			padding-left: 1vw;
+			width: 20vw;
 			height:7vh;
 			color: white;
 			font-family: 'Poiret One', cursive;
@@ -368,10 +379,10 @@ a:hover{
 		}
 
 		.email{
-			margin-left: 3vh;
+			margin-left: 2vw;
 			margin-top: 7vh;
-			padding-left: 2vh;
-			width: 40vh;
+			padding-left: 1vw;
+			width: 20.5vw;
 			height:7vh;
 			color: white;
 			font-family: 'Poiret One', cursive;
@@ -379,10 +390,10 @@ a:hover{
 		}
 
 		.comments{
-			margin-left: 55vh;
+			margin-left: 23vw;
 			margin-top: 3vh;
 			padding-left: 2vh;
-			width: 84vh;
+			width: 43vw;
 			height:30vh;
 			color: white;
 			font-family: 'Poiret One', cursive;
@@ -428,13 +439,14 @@ button{
 	font-family: 'Poiret One', cursive;
 	border: 1px solid #6d6256;
 	background-color: rgba(0,0,0,0.4);
-	font-size: 1.5em;
+	font-size: 3vh;
 	text-transform: uppercase;
-	letter-spacing: 2px;
-	margin-left: 85vh;
+	letter-spacing: 1vh;
+	text-align: center;
+	margin-left: 40vw;
 	margin-top: 5vh;
 	height: 5vh;
-	width: 25vh;
+	width: 10vw;
 }
 
 button:hover{
@@ -447,11 +459,12 @@ button:hover{
 
 footer{
 	background-color: rgba(255, 51, 51, 0.8);
-	height: 45vh;
+	min-height: 45vh;
 	width: 100%;
 
 	a{
 		text-decoration: none;
+		font-size: 2vh;
 	}
 
 	h3{
@@ -492,7 +505,7 @@ footer{
 	}
 
 	.fa{
-		padding-right: 1em;
+		padding-right: 2vw;
 	}
 
 	.fa-github:hover{

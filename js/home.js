@@ -1,12 +1,11 @@
 $(document).ready(function(){
-/*
- $('a[href^="#"]').on('click', function(event) {
-    var target = $(this.href);
-    if( target.length ) {
-        event.preventDefault();
-        $('html, body').animate({
-            scrollTop: target.offset().top
-        }, 1000);
-    }*/
-new WOW().init();
+	$('a').click(function(){ 
+
+		$('html, body').animate({ 
+			scrollTop: $( $.attr(this, 'href') ).offset().top 
+		}, 
+		500
+		); 
+		return false; });
+	new WOW().init();
 });
