@@ -3,7 +3,7 @@ header {
   width: 100%;
   position: fixed;
   z-index: 100;
-  background-color: rgba(0, 0, 0, 0.1); }
+  background-color: rgba(0, 0, 0, 0.5); }
   header .background {
     visibility: hidden;
     position: absolute;
@@ -25,17 +25,18 @@ header {
   header .header:hover i {
     opacity: 0; }
   header a, header a:hover {
-    text-decoration: none; }
+    text-decoration: none;
+    color: white; }
   header i {
     text-decoration: none;
     margin-left: 50%;
-    color: black;
+    color: white;
     padding-top: 2vh; }
   header .scrollto:hover {
     text-decoration: none; }
   header .scrollto {
     text-decoration: none;
-    color: black;
+    color: white;
     font-family: 'Poiret One', cursive;
     padding-right: 2em;
     transition: all 0.3s ease-in;
@@ -44,22 +45,24 @@ header {
     text-decoration: none; }
 
 body #home {
-  background-color: #ECDFBD;
+  /* background-color : #ECDFBD; */
+  background-image: url(../images/home-bg.jpg);
+  background-size: cover;
   min-height: 100vh; }
   body #home .aboveLine {
-    color: #FB6648;
+    color: white;
     padding-top: 15vh;
     padding-left: 10vw;
     font-family: 'Poiret One', cursive;
     margin-bottom: 0;
     font-size: 10vh; }
   body #home .belowLine {
-    color: #FB6648;
+    color: white;
     padding-left: 50vw;
     font-family: 'Poiret One', cursive;
     font-size: 10vh; }
   body #home .row div {
-    background-color: #FB6648;
+    background-color: rgba(0, 0, 0, 0.4);
     color: #ECDFBD;
     text-decoration: none;
     display: inline-block;
@@ -71,7 +74,7 @@ body #home {
   body #home .phrase li {
     transition: scale(0);
     transition: all 0.5s ease-in-out;
-    color: #FB6648;
+    color: white;
     text-decoration: none;
     font-family: 'Poiret One', cursive;
     display: inline-block;
@@ -87,8 +90,7 @@ body #home {
   body #home ul {
     text-align: center; }
   body #home .row div:hover {
-    background-color: #ECDFBD;
-    color: #FB6648; }
+    background-color: rgba(0, 0, 0, 0.7); }
   body #home i {
     font-size: 7vh; }
 body #about {
@@ -100,7 +102,7 @@ body #about {
     padding-left: 45vh;
     font-family: left;
     font-weight: bold;
-    font-size: 5vh;
+    font-size: 4vh;
     color: black;
     font-family: 'Poiret One', cursive; }
   body #about p {
@@ -108,13 +110,13 @@ body #about {
     /* font-family: 'Stalemate', cursive; */
     text-align: center;
     padding-top: 5vh;
-    font-size: 5vh;
+    font-size: 3vh;
     color: white; }
   body #about img {
     float: right;
     transition: all 0.3s ease-in;
     height: 84vh;
-    width: 20vw; }
+    width: 17vw; }
   body #about i {
     padding-left: 50vh;
     text-decoration: none;
@@ -244,7 +246,9 @@ body #projects {
   body #projects section {
     padding-top: 10vh; }
 body #contact {
-  background-color: #515151;
+  background-image: url("../images/contact-bg.jpg");
+  background-size: cover;
+  /* background-color: #515151; */
   min-height: 120vh;
   width: 100%; }
   body #contact .sep {
@@ -304,14 +308,14 @@ body #contact {
     color: white;
     font-size: 1.2em; }
   body #contact input {
-    background-color: rgba(0, 0, 0, 0.4); }
+    background-color: rgba(0, 0, 0, 0.6); }
   body #contact textarea {
-    background-color: rgba(0, 0, 0, 0.4); }
+    background-color: rgba(0, 0, 0, 0.6); }
   body #contact button {
     color: #fff;
     font-family: 'Poiret One', cursive;
     border: 1px solid #6d6256;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.6);
     font-size: 3vh;
     text-transform: uppercase;
     letter-spacing: 1vh;
@@ -322,7 +326,7 @@ body #contact {
     width: 10vw; }
   body #contact button:hover {
     border-color: white;
-    opacity: 0.7; }
+    opacity: 0.8; }
 
 footer {
   background-color: rgba(255, 51, 51, 0.8);
