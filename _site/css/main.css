@@ -162,6 +162,7 @@ body #skills {
   min-height: 120vh; }
   body #skills h1 {
     padding-top: 10vh;
+    font-size: 4vh;
     font-family: 'Poiret One', cursive;
     text-align: center;
     font-weight: bold; }
@@ -180,7 +181,7 @@ body #skills {
     height: 35vh;
     text-align: center; }
   body #skills .insideSkills {
-    margin-left: 10vw; }
+    margin-left: 5vh; }
   body #skills .progress-bar {
     background-color: #FB6648; }
 body #projects {
